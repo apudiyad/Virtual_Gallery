@@ -1,523 +1,697 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>VIRTUAL ART GALLERY</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-  <title>VIRTUAL ART GALLERY</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/main_style.css" rel="stylesheet" />
+    <link href="test_css.css" rel="stylesheet" />
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/main_style.css" rel="stylesheet">
-
-</head>
-
-<body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
+    <style>
+    .button2 {
+      border-radius: 12px;
+      width: 100px;
+      font-size: 20px;
       
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto " href="artist_index.html">Artist</a></li>
-          <li><a class="nav-link scrollto " href="artwork_index.html">Artwork</a></li>
-          <li><a class="nav-link scrollto " href="community_index.html">Community</a></li>
-          <li><a class="nav-link scrollto " href="shop_index.html">Shop</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="nav-link scrollto" href="login_index.html">LOGIN / SIGNUP</a></li>
+    }
+    .button2:hover {
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+      opacity: 1;
+    }</style>
+  </head>
+
+  <body>
+    <!-- ======= Header =======  New version ------------------ ----------- -->
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center justify-content-between">
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li>
+              <a class="nav-link scrollto" href="index.html">Home</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="artist_index.html">Artist</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="artwork_index.html">Artwork</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="community_index.html"
+                >Community</a
+              >
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="shop_index.html">Shop</a>
+            </li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <ul class="navbar navbar-right">
+          <li id="user-icon" class="nav-link btn user-icon">
+            <a class="nav-link" data-toggle="modal" data-target="#login-modal">
+              <i class="bi bi-person-circle"></i>
+            </a>
+          </li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
 
+    <!-- ======= Home Section ======= -->
+    <div
+      id="home"
+      class="home route bg-image"
+      style="background-image: url(img/bg.png)"
+    >
+      <div class="overlay-itro"></div>
+      <div class="home-content display-table">
+        <div class="table-cell">
+          <div class="container">
+            <!--<p class="display-6 color-d">Hello, world!</p>-->
+            <h1 class="home-title mb-4">Welcome to Virtual Art Gallery</h1>
+            <p class="home-subtitle">
+              <span
+                class="typed"
+                data-typed-items="Art Space, Interactive Community, Know your Artists"
+              ></span>
+            </p>
+            <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+          </div>
+        </div>
+      </div>
     </div>
-  </header><!-- End Header -->
+    <!-- End Home Section -->
 
-  <!-- ======= Home Section ======= -->
-  <div id="home" class="home route bg-image" style="background-image: url(img/bg.png)">
-    <div class="overlay-itro"></div>
-    <div class="home-content display-table">
-      <div class="table-cell">
+    <main id="main">
+      <!-- ======= Community Cards ======= -->
+      <section id="workexpedu" class="services-mf pt-5 route">
         <div class="container">
-          <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="home-title mb-4">Welcome to Virtual Art Gallery</h1>
-          <p class="home-subtitle"><span class="typed" data-typed-items="Art Space, Interactive Community, Know your Artists"></span></p>
-          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="title-box text-center">
+                <h3 class="title-a">UPCOMING !</h3>
+                <div class="line-mf"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="service-box">
+                <div class="service-ico">
+                  <span class="ico-circle"><i class="bi bi-camera"></i></span>
+                </div>
+                <div class="service-content">
+                  <h2 class="s-title">Exhibitions</h2>
+                  <p class="s-description text-center">DESCRIPTION</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-box">
+                <div class="service-ico">
+                  <span class="ico-circle"
+                    ><i class="bi bi-calendar-event"></i
+                  ></span>
+                </div>
+                <div class="service-content">
+                  <h2 class="s-title">Group Events</h2>
+                  <p class="s-description text-center">DESCRIPTION</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-box">
+                <div class="service-ico">
+                  <span class="ico-circle"
+                    ><i class="bi bi-emoji-laughing"></i
+                  ></span>
+                </div>
+                <div class="service-content">
+                  <h2 class="s-title">Artist Showcase</h2>
+                  <p class="s-description text-center">DESCRIPTION</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-box">
+                <div class="service-ico">
+                  <span class="ico-circle"><i class="bi bi-shop"></i></span>
+                </div>
+                <div class="service-content">
+                  <h2 class="s-title">Shop Exclusive</h2>
+                  <p class="s-description text-center">DESCRIPTION</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Education and Work Experience Section -->
+
+      <!-- ======= Museums near you ======= -->
+      <section id="projects" class="portfolio-mf sect-pt4 route">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="title-box text-center">
+                <h3 class="title-a">Museums Near You !</h3>
+                <div class="line-mf"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="work-box">
+                <a
+                  href="img/m1.jpeg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox"
+                >
+                  <div class="work-img">
+                    <img src="img/m1.jpeg" alt="" class="img-fluid" />
+                  </div>
+                </a>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Museum Name</h2>
+                      <div class="w-more">
+                        <span class="w-ctegory">Location</span> /
+                        <span class="w-date">Featured Artist</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="portfolio-details.html">
+                          <span class="bi bi-plus-circle"></span
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="work-box">
+                <a
+                  href="img/m2.jpeg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox"
+                >
+                  <div class="work-img">
+                    <img src="img/m2.jpeg" alt="" class="img-fluid" />
+                  </div>
+                </a>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Museum Name</h2>
+                      <div class="w-more">
+                        <span class="w-ctegory">Location</span> /
+                        <span class="w-date">Featured Artist</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="portfolio-details.html">
+                          <span class="bi bi-plus-circle"></span
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="work-box">
+                <a
+                  href="img/m3.jpeg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox"
+                >
+                  <div class="work-img">
+                    <img src="img/m3.jpeg" alt="" class="img-fluid" />
+                  </div>
+                </a>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Museum Name</h2>
+                      <div class="w-more">
+                        <span class="w-ctegory">Location</span> /
+                        <span class="w-date">Featured Artist</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="portfolio-details.html">
+                          <span class="bi bi-plus-circle"></span
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="work-box">
+                <a
+                  href="img/m4.webp"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox"
+                >
+                  <div class="work-img">
+                    <img src="img/m4.webp" alt="" class="img-fluid" />
+                  </div>
+                </a>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Museum Name</h2>
+                      <div class="w-more">
+                        <span class="w-ctegory">Location</span> /
+                        <span class="w-date">Featured Artist</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="portfolio-details.html">
+                          <span class="bi bi-plus-circle"></span
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="work-box">
+                <a
+                  href="img/m5.jpeg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox"
+                >
+                  <div class="work-img">
+                    <img src="img/m5.jpeg" alt="" class="img-fluid" />
+                  </div>
+                </a>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Museum Name</h2>
+                      <div class="w-more">
+                        <span class="w-ctegory">Location</span> /
+                        <span class="w-date">Featured Artist</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="portfolio-details.html">
+                          <span class="bi bi-plus-circle"></span
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="work-box">
+                <a
+                  href="img/m6.jpeg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox"
+                >
+                  <div class="work-img">
+                    <img src="img/m6.jpeg" alt="" class="img-fluid" />
+                  </div>
+                </a>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Museum Name</h2>
+                      <div class="w-more">
+                        <span class="w-ctegory">Location</span> /
+                        <span class="w-date">Featured Artist</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="portfolio-details.html">
+                          <span class="bi bi-plus-circle"></span
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Project Section -->
+
+      <!-- ======= Artist Blog Section ======= -->
+      <section id="blog" class="blog-mf sect-pt4 route">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="title-box text-center">
+                <h3 class="title-a">Artist Interviews</h3>
+                <div class="line-mf"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card card-blog">
+                <div class="card-img">
+                  <a href="blog-single.html"
+                    ><img src="img/A1.jpeg" alt="" class="img-fluid"
+                  /></a>
+                </div>
+                <div class="card-body">
+                  <div class="card-category-box">
+                    <div class="card-category">
+                      <h6 class="category">Artist 1</h6>
+                    </div>
+                  </div>
+                  <h3 class="card-title">
+                    <a href="blog-single.html"> Read More</a>
+                  </h3>
+                  <p class="card-description">Des</p>
+                </div>
+                <div class="card-footer">
+                  <div class="post-author">
+                    <a href="#">
+                      <img src="A2.webp" alt="" class="avatar rounded-circle" />
+                      <span class="author"> xyz </span>
+                    </a>
+                  </div>
+                  <div class="post-date">
+                    <span class="bi bi-clock"></span> 10 min
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card card-blog">
+                <div class="card-img">
+                  <a href="blog-single.html"
+                    ><img src="img/A2.webp" alt="" class="img-fluid"
+                  /></a>
+                </div>
+                <div class="card-body">
+                  <div class="card-category-box">
+                    <div class="card-category">
+                      <h6 class="category">Artist 2</h6>
+                    </div>
+                  </div>
+                  <h3 class="card-title">
+                    <a href="blog-single.html">Read More</a>
+                  </h3>
+                  <p class="card-description">DESC</p>
+                </div>
+                <div class="card-footer">
+                  <div class="post-author">
+                    <a href="#">
+                      <img
+                        src="img/A1.jpeg"
+                        alt=""
+                        class="avatar rounded-circle"
+                      />
+                      <span class="author"> xyz</span>
+                    </a>
+                  </div>
+                  <div class="post-date">
+                    <span class="bi bi-clock"></span> 10 min
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card card-blog">
+                <div class="card-img">
+                  <a href="blog-single.html"
+                    ><img src="img/A3.jpeg" alt="" class="img-fluid"
+                  /></a>
+                </div>
+                <div class="card-body">
+                  <div class="card-category-box">
+                    <div class="card-category">
+                      <h6 class="category">Artist 3</h6>
+                    </div>
+                  </div>
+                  <h3 class="card-title">
+                    <a href="blog-single.html">Read More</a>
+                  </h3>
+                  <p class="card-description">DESC</p>
+                </div>
+                <div class="card-footer">
+                  <div class="post-author">
+                    <a href="#">
+                      <img
+                        src="img/A1.jpeg"
+                        alt=""
+                        class="avatar rounded-circle"
+                      />
+                      <span class="author">xyz</span>
+                    </a>
+                  </div>
+                  <div class="post-date">
+                    <span class="bi bi-clock"></span> 10 min
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Blog Section -->
+
+      <!-- ======= Contact Section ======= -->
+      <section
+        id="contact"
+        class="paralax-mf footer-paralax bg-image sect-mt4 route"
+        style="background-image: url(assets/img/overlay-bg.jpg)"
+      >
+        <div class="overlay-mf"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="contact-mf">
+                <div id="contact" class="box-shadow-full">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="title-box-2">
+                        <h5 class="title-left">Send Message Us</h5>
+                      </div>
+                      <div>
+                        <form
+                          action="forms/contact.php"
+                          method="post"
+                          role="form"
+                          class="php-email-form"
+                        >
+                          <div class="row">
+                            <div class="col-md-12 mb-3">
+                              <div class="form-group">
+                                <input
+                                  type="text"
+                                  name="name"
+                                  class="form-control"
+                                  id="name"
+                                  placeholder="Your Name"
+                                  required
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                              <div class="form-group">
+                                <input
+                                  type="email"
+                                  class="form-control"
+                                  name="email"
+                                  id="email"
+                                  placeholder="Your Email"
+                                  required
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                              <div class="form-group">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  name="subject"
+                                  id="subject"
+                                  placeholder="Subject"
+                                  required
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <textarea
+                                  class="form-control"
+                                  name="message"
+                                  rows="5"
+                                  placeholder="Message"
+                                  required
+                                ></textarea>
+                              </div>
+                            </div>
+                            <div class="col-md-12 text-center my-3">
+                              <div class="loading">Loading</div>
+                              <div class="error-message"></div>
+                              <div class="sent-message">
+                                Your message has been sent. Thank you!
+                              </div>
+                            </div>
+                            <div class="col-md-12 text-center">
+                              <button
+                                type="submit"
+                                class="button button-a button-big button-rouded"
+                              >
+                                Send Message
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="title-box-2 pt-4 pt-md-0">
+                        <h5 class="title-left">Get in Touch</h5>
+                      </div>
+                      <div class="more-info">
+                        <p class="lead">description</p>
+                        <ul class="list-ico">
+                          <li><span class="bi bi-geo-alt"></span> ADDRESS</li>
+                          <li><span class="bi bi-phone"></span> NUMBER</li>
+                          <li><span class="bi bi-envelope"></span> MAIL</li>
+                        </ul>
+                      </div>
+                      <div class="socials">
+                        <ul>
+                          <li>
+                            <a href=""
+                              ><span class="ico-circle"
+                                ><i class="bi bi-facebook"></i></span
+                            ></a>
+                          </li>
+                          <li>
+                            <a href=""
+                              ><span class="ico-circle"
+                                ><i class="bi bi-linkedin"></i></span
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="copyright-box">
+              <p class="copyright">
+                &copy; Copyright <strong>AP</strong>. All Rights Reserved
+              </p>
+              <div class="credits"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End  Footer -->
+
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+    <!-- Login/Signup Modal -->
+    <div class="modal fade" id="login-modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <!--<button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>-->
+            <div class="modal-form-login bg-white">
+              <h1 class="text-center">Login</h1>
+              <form action="/index.html" class="loginForm">
+                <div class="input-group">
+                  <label for="username" class="label">Username</label>
+                  <input type="text" id="username" class="input" />
+                  <span class="error-message"></span>
+                </div>
+                <div class="input-group">
+                  <label for="password" class="label">Password</label>
+                  <input type="password" id="password" class="input" />
+                  <span class="error-message"></span>
+                </div>
+                <div class="col-md-12 text-center">
+                  <button type="submit" class="button2">
+                    Login
+                  </button>
+                </div>
+                <span class="invalid-user error-message"></span>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div><!-- End Home Section -->
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <main id="main">
-
-
-    <!-- ======= Community Cards ======= -->
-    <section id="upcoming" class="services-mf pt-5 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                UPCOMING !
-              </h3>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-camera"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Exhibitions</h2>
-                <p class="s-description text-center">
-                  DESCRIPTION
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-calendar-event"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Group Events</h2>
-                <p class="s-description text-center">
-                  DESCRIPTION
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-emoji-laughing"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Artist Showcase</h2>
-                <p class="s-description text-center">
-                  DESCRIPTION
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-shop"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Shop Exclusive</h2>
-                <p class="s-description text-center">
-                  DESCRIPTION
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Education and Work Experience Section -->
-
-    
-
-    <!-- ======= Museums near you ======= -->
-    <section id="projects" class="portfolio-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Museums Near You !
-              </h3>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="img/m1.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="img/m1.jpeg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Museum Name</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Location</span> / <span class="w-date">Featured Artist</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="img/m2.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="img/m2.jpeg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Museum Name</h2>
-                    <div class="w-more">
-                        <span class="w-ctegory">Location</span> / <span class="w-date">Featured Artist</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="img/m3.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="img/m3.jpeg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Museum Name</h2>
-                    <div class="w-more">
-                        <span class="w-ctegory">Location</span> / <span class="w-date">Featured Artist</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="img/m4.webp" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="img/m4.webp" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Museum Name</h2>
-                    <div class="w-more">
-                        <span class="w-ctegory">Location</span> / <span class="w-date">Featured Artist</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="img/m5.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="img/m5.jpeg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Museum Name</h2>
-                    <div class="w-more">
-                        <span class="w-ctegory">Location</span> / <span class="w-date">Featured Artist</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="img/m6.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="img/m6.jpeg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Museum Name</h2>
-                    <div class="w-more">
-                        <span class="w-ctegory">Location</span> / <span class="w-date">Featured Artist</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section><!-- End Project Section -->
-
-    
-
-    
-
-    <!-- ======= Artist Blog Section ======= -->
-    <section id="blog" class="blog-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Artist Interviews
-              </h3>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="blog-single.html"><img src="img/A1.jpeg" alt="" class="img-fluid"></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">Artist 1</h6>
-                  </div>
-                </div>
-                <h3 class="card-title"><a href="blog-single.html"> Read More</a></h3>
-                <p class="card-description">
-                  Des
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="A2.webp" alt="" class="avatar rounded-circle">
-                    <span class="author"> xyz </span>
-                  </a>
-                </div>
-                <div class="post-date">
-                  <span class="bi bi-clock"></span> 10 min
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="blog-single.html"><img src="img/A2.webp" alt="" class="img-fluid"></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">Artist 2</h6>
-                  </div>
-                </div>
-                <h3 class="card-title"><a href="blog-single.html">Read More</a></h3>
-                <p class="card-description">
-                  DESC
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="img/A1.jpeg" alt="" class="avatar rounded-circle">
-                    <span class="author"> xyz</span>
-                  </a>
-                </div>
-                <div class="post-date">
-                  <span class="bi bi-clock"></span> 10 min
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="blog-single.html"><img src="img/A3.jpeg" alt="" class="img-fluid"></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">Artist 3</h6>
-                  </div>
-                </div>
-                <h3 class="card-title"><a href="blog-single.html">Read More</a></h3>
-                <p class="card-description">
-                  DESC
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="img/A1.jpeg" alt="" class="avatar rounded-circle">
-                    <span class="author">xyz</span>
-                  </a>
-                </div>
-                <div class="post-date">
-                  <span class="bi bi-clock"></span> 10 min
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Blog Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="contact-mf">
-              <div id="contact" class="box-shadow-full">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        Send Message Us
-                      </h5>
-                    </div>
-                    <div>
-                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                        <div class="row">
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                            </div>
-                          </div>
-                          <div class="col-md-12 text-center my-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-                          </div>
-                          <div class="col-md-12 text-center">
-                            <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="title-box-2 pt-4 pt-md-0">
-                      <h5 class="title-left">
-                        Get in Touch
-                      </h5>
-                    </div>
-                    <div class="more-info">
-                      <p class="lead">
-                        description
-                      </p>
-                      <ul class="list-ico">
-                        <li><span class="bi bi-geo-alt"></span> ADDRESS</li>
-                        <li><span class="bi bi-phone"></span> NUMBER</li>
-                        <li><span class="bi bi-envelope"></span> MAIL</li>
-                      </ul>
-                    </div>
-                    <div class="socials">
-                      <ul>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="copyright-box">
-            <p class="copyright">&copy; Copyright <strong>AP</strong>. All Rights Reserved</p>
-            <div class="credits">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer><!-- End  Footer -->
-
-  
-
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/login.js"></script>
+    <!-- Add these script tags before the closing </body> tag -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
 </html>
