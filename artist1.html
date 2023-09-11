@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>VIRTUAL ART GALLERY</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/artiststyle.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+      
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto active" href="artist_index.html">Artist</a></li>
+          <li><a class="nav-link scrollto " href="artwork_index.html">Artwork</a></li>
+          <li><a class="nav-link scrollto " href="community_index.html">Community</a></li>
+          <li><a class="nav-link scrollto " href="shop_index.html">Shop</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="login_index.html">LOGIN / SIGNUP</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <section class="section">
+    <div class="section__container">
+      <div class="content">
+        <h1 class="title">
+        <span>Murakami<br />a Contemporary Artist</span> 
+        </h1>
+        <p class="description">
+           My work is based on the inspiration drawn from the 
+                  Japanese subculture of otaku, 
+                  which is replete with strange perversions of cuteness
+                  and innocence, as well as incredible violence.
+        </p>
+        <div class="action__btns">         
+         <button class="portfolio" onclick="redirectToPage()" >Portfolio</button> 
+         <script>
+          // JavaScript to another HTML page
+          function redirectToPage() {
+              // path to the HTML page
+              window.location.href = 'artist1_portfolio.html';
+          }
+      </script>
+        </div>
+      </div>
+      <div class="image1">
+        <img src="img/Artist1.jpg" alt="profile" />
+      </div>
+    </div>
+  </section>
+</body>
+</html>

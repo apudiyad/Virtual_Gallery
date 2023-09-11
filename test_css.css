@@ -1,0 +1,12 @@
+/* Custom CSS for the user icon */
+.user-icon {
+    text-align: right;
+    
+    
+  }
+  
+  .user-icon a {
+    font-size: 10px; /* Adjust the font-size as needed to increase the icon size */
+    margin-left: 650px; /* This pushes the user icon to the right */
+  }
+  
