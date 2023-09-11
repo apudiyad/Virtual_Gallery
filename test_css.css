@@ -1,12 +1,35 @@
 /* Custom CSS for the user icon */
 .user-icon {
-    text-align: right;
-    
-    
-  }
-  
-  .user-icon a {
-    font-size: 10px; /* Adjust the font-size as needed to increase the icon size */
-    margin-left: 650px; /* This pushes the user icon to the right */
-  }
-  
+  text-align: right;
+}
+
+.user-icon a {
+  font-size: 50px; /* Adjust the font-size as needed to increase the icon size */
+}
+
+.modal-dialog {
+  background: white;
+}
+
+.btn-close {
+  position: absolute;
+  right: 0;
+}
+
+.modal-backdrop {
+  z-index: -1;
+}
+
+.modal-body label {
+  margin-top: 7px;
+}
+
+.input:focus {
+  outline: none;
+  background-clip: padding-box;
+}
+
+.error-message {
+  font-size: 0.85rem;
+  color: red;
+}
