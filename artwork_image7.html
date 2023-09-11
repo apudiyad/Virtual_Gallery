@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>VIRTUAL ART GALLERY</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/artwork_image.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto " href="index.html">Home</a></li>
+                    <li><a class="nav-link scrollto " href="artist_index.html">Artist</a></li>
+                    <li><a class="nav-link scrollto active" href="artwork_index.html">Artwork</a></li>
+                    <li><a class="nav-link scrollto " href="community_index.html">Community</a></li>
+                    <li><a class="nav-link scrollto " href="shop_index.html">Shop</a></li>
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                    <li><a class="nav-link scrollto" href="login_index.html">LOGIN / SIGNUP</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+        </div>
+    </header><!-- End Header -->
+    <section class="section">
+        <div class="section__container">
+            <div class="content">
+                <h1 class="title">
+                    <span>Artwork Name<br /></span>
+                </h1>
+                <p class="description">
+                    My work is based on the inspiration drawn from the
+                    Japanese subculture of otaku,
+                    which is replete with strange perversions of cuteness
+                    and innocence, as well as incredible violence.<br /><br /><br />
+                    Get to know about me...
+                </p>
+                <div class="action__btns">
+                    <button class="artist" onclick="redirectToPage()">Artist</button>
+                    <script>
+                        // JavaScript to another HTML page
+                        function redirectToPage() {
+                            // path to the HTML page
+                            window.location.href = 'artist1.html';
+                        }
+                    </script>
+                    <button id="123" class="save hidden" onclick="JavaScript:alert('Image Saved')">Save</button>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function () {
+                            const button = document.querySelector('.save');
+
+                            var authValue = localStorage.getItem("auth");
+
+                            if (authValue == '1') {
+                                var element = document.getElementById("123");
+                                element.classList.remove("hidden");
+                                button.addEventListener('click', function () {
+                                    const artworkId = button.getAttribute('data-artwork-id');
+                                    const savedArtworks = JSON.parse(localStorage.getItem('savedArtworks')) || [];
+
+                                    if (!savedArtworks.includes(artworkId)) {
+                                        savedArtworks.push(artworkId);
+                                        localStorage.setItem('savedArtworks', JSON.stringify(savedArtworks));
+                                        alert('Artwork saved!');
+                                    } else {
+                                        alert('Artwork is already saved.');
+                                    }
+                                });
+                            }
+                        });
+                    </script>
+                </div>
+            </div>
+            <div class="image1">
+                <img src="img/M7.png" id = "image1" alt="profile" />
+                <script>
+                    let image = document.getElementById('image1');
+                    
+                    // add keypress event listener on window
+                    window.addEventListener('keypress', (event) => {
+                    
+                       // get the width and height of the image
+                       let width = image.clientWidth;
+                       let height = image.clientHeight;
+                    
+                       // when the user presses the 'p' key, zoom in
+                       if (event.key == 'p') {
+                          image.style.width = (width + 100) + "px";
+                          image.style.height = (height + 100) + "px";
+                       }
+                    
+                       // zoom out when the user presses the q key
+                       if (event.key == "q") {
+                          image.style.width = (width - 100) + "px";
+                          image.style.height = (height - 100) + "px";
+                       }
+                    })
+                 </script>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
