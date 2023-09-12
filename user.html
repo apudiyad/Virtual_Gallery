@@ -99,7 +99,7 @@
                             <a class="btn btn-info button button-a button-big button-rouded ">Edit</a>
                           </div>    
                           <div class="col-sm-10 text-center">
-                            <a class="btn btn-info  button button-a button-big button-rouded ">Logout</a>
+                            <a class="btn btn-info  button button-a button-big button-rouded" id="logoutBtn">Logout</a>
                           </div>                    
                         </div>  
                       </div>
@@ -382,6 +382,13 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    var logoutBtn = document.getElementById('logoutBtn');
+    logoutBtn.addEventListener('click', function() {
+      localStorage.removeItem("auth");
+      window.location.href = "/index.html";
+    }, false);
+  </script>
 
 </body>
 
