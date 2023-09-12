@@ -28,16 +28,17 @@
     <link href="test_css.css" rel="stylesheet" />
 
     <style>
-    .button2 {
-      border-radius: 12px;
-      width: 100px;
-      font-size: 20px;
-      
-    }
-    .button2:hover {
-      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-      opacity: 1;
-    }</style>
+      .button2 {
+        border-radius: 12px;
+        width: 100px;
+        font-size: 20px;
+      }
+      .button2:hover {
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+          0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        opacity: 1;
+      }
+    </style>
   </head>
 
   <body>
@@ -656,7 +657,7 @@
             ></button>-->
             <div class="modal-form-login bg-white">
               <h1 class="text-center">Login</h1>
-              <form action="/Virtual_Gallery/user.html" class="loginForm">
+              <form action="/user.html" class="loginForm">
                 <div class="input-group">
                   <label for="username" class="label">Username</label>
                   <input type="text" id="username" class="input" />
@@ -668,9 +669,7 @@
                   <span class="error-message"></span>
                 </div>
                 <div class="col-md-12 text-center">
-                  <button type="submit" class="button2">
-                    Login
-                  </button>
+                  <button type="submit" class="button2">Login</button>
                 </div>
                 <span class="invalid-user error-message"></span>
               </form>
