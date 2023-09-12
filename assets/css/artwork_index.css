@@ -1,4 +1,16 @@
-
+:root {
+  --primary-color: #0B5345;
+  --primary-color-dark:#0B5345;
+ 
+  --text-dark: #eaedf0;
+  --text-light: #f7f9fe;
+  --extra-light: #000000;
+  --max-width: 1200px;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #000000;
+}
 
 .grid-artwork {
   padding: 65px 0px;
@@ -72,7 +84,7 @@
   text-decoration: none;
   letter-spacing: 1px;
   color: #fff;
-  background-color: #313131;
+  background-color: #000000;
   transition: all 0.5s;
  }
 
