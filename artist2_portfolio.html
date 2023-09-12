@@ -1,262 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>VIRTUAL ART GALLERY</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-  <title>VIRTUAL ART GALLERY</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/main_style.css" rel="stylesheet" />
+    <link href="assets/css/main_style.css" rel="stylesheet" />
+    <link href="assets/css/artist_porfolio.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/css/box.css">
+    <link rel="stylesheet" href="assets/css/light-box.css">
+    <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-  <!---->
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  </head>
 
- 
-  <link rel="stylesheet" href="assets/css/light-box.css">
-  
-  
-  <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
-  <!--<script src="assets/js/modernizr-2.8.3-respond-1.4.2.min.js"></script> -->
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
- <link href="assets/css/artist_porfolio.css" rel="stylesheet"> 
- <link rel="stylesheet" href="assets/css/box.css">
-
-</head>
-
-<body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
-      
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto " href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto active" href="artist_index.html">Artist</a></li>
-          <li><a class="nav-link scrollto " href="artwork_index.html">Artwork</a></li>
-          <li><a class="nav-link scrollto " href="community_index.html">Community</a></li>
-          <li><a class="nav-link scrollto " href="shop_index.html">Shop</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="nav-link scrollto" href="login_index.html">LOGIN / SIGNUP</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
-  <main>
-  <div class="grid-portfolio" id="portfolio">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-sm-6">
-                <div class="portfolio-item">
-                    <div class="thumb">
-                        <a href="img/Artist2_work/p1.png" data-lightbox="image-1"><div class="hover-effect"> 
-                           
-                            <div class="hover-content">
-                                <h1>The Weeping Women</em></h1>
+  <body>
+    <body>
+        <!-- ======= Header =======  New version ------------------ ----------- -->
+        <header id="header" class="fixed-top">
+          <div class="container d-flex align-items-center justify-content-between">
+            <nav id="navbar" class="navbar">
+              <ul>
+                <li>
+                  <a class="nav-link scrollto" href="index.html">Home</a>
+                </li>
+                <li>
+                  <a class="nav-link scrollto active" href="artist_index.html">Artist</a>
+                </li>
+                <li>
+                  <a class="nav-link scrollto" href="artwork_index.html">Artwork</a>
+                </li>
+                <li>
+                  <a class="nav-link scrollto" href="community_index.html">Community</a>
+                </li>
+                <li>
+                  <a class="nav-link scrollto" href="shop_index.html">Shop</a>
+                </li>
+              </ul>
+            </nav>
+            <!-- .navbar -->
+            <ul class="navbar navbar-right">
+              <li id="user-icon" class="nav-link btn user-icon">
+                <a class="nav-link" data-toggle="modal" data-target="#login-modal">
+                  <i class="bi bi-person-circle"></i>
+                </a>
+              </li>
+            </ul>
+        </div>
+        </header>
+        <!-- End Header -->
+      <main>
+        <div class="grid-portfolio" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="portfolio-item">
+                            <div class="thumb">
+                                <a href="img/Artist2_work/p1.png" data-lightbox="image-1"><div class="hover-effect"> 
+                                   
+                                    <div class="hover-content">
+                                        <h1>The Weeping Women</em></h1>
+                                    </div>
+                                </div></a>
+                                <div class="image">
+                                    <img src="img/Artist2_work/p1.png"> 
+                                    
+                                </div>
                             </div>
-                        </div></a>
-                        <div class="image">
-                            <img src="img/Artist2_work/p1.png"> 
-                            
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="portfolio-item">
-                    <div class="thumb">
-                        <a href="img/Artist2_work/p2.png" data-lightbox="image-1"><div class="hover-effect">
-                            <div class="hover-content">
-                                <h1>The Old Guitarist</h1>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="portfolio-item">
+                            <div class="thumb">
+                                <a href="img/Artist2_work/p2.png" data-lightbox="image-1"><div class="hover-effect">
+                                    <div class="hover-content">
+                                        <h1>The Old Guitarist</h1>
+                                    </div>
+                                </div></a>
+                                <div class="image">
+                                    <img src="img/Artist2_work/p2.png">
+                                </div>
                             </div>
-                        </div></a>
-                        <div class="image">
-                            <img src="img/Artist2_work/p2.png">
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="portfolio-item">
-                    <div class="thumb">
-                        <a href="img/Artist2_work/p7.png" data-lightbox="image-1"><div class="hover-effect">
-                            <div class="hover-content">
-                                <h1>Two Girls Reading</h1>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="portfolio-item">
+                            <div class="thumb">
+                                <a href="img/Artist2_work/p7.png" data-lightbox="image-1"><div class="hover-effect">
+                                    <div class="hover-content">
+                                        <h1>Two Girls Reading</h1>
+                                    </div>
+                                </div></a>
+                                <div class="image">
+                                    <img src="img/Artist2_work/p7.png">
+                                </div>
                             </div>
-                        </div></a>
-                        <div class="image">
-                            <img src="img/Artist2_work/p7.png">
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="portfolio-item">
-                    <div class="thumb">
-                        <a href="assets/img/Artist2_work/p4.png" data-lightbox="image-1"><div class="hover-effect">
-                            <div class="hover-content">
-                                <h1>A boy with pipe</em></h1>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="portfolio-item">
+                            <div class="thumb">
+                                <a href="assets/img/Artist2_work/p4.png" data-lightbox="image-1"><div class="hover-effect">
+                                    <div class="hover-content">
+                                        <h1>A boy with pipe</em></h1>
+                                    </div>
+                                </div></a>
+                                <div class="image">
+                                    <img src="img/Artist2_work/p4.png">
+                                </div>
                             </div>
-                        </div></a>
-                        <div class="image">
-                            <img src="img/Artist2_work/p4.png">
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="portfolio-item">
-                    <div class="thumb">
-                        <a href="img/Artist2_work/p5.png" data-lightbox="image-1"><div class="hover-effect">
-                            <div class="hover-content">
-                                <h1>Jacqueline</em></h1>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="portfolio-item">
+                            <div class="thumb">
+                                <a href="img/Artist2_work/p5.png" data-lightbox="image-1"><div class="hover-effect">
+                                    <div class="hover-content">
+                                        <h1>Jacqueline</em></h1>
+                                    </div>
+                                </div></a>
+                                <div class="image">
+                                    <img src="img/Artist2_work/p5.png">
+                                </div>
                             </div>
-                        </div></a>
-                        <div class="image">
-                            <img src="img/Artist2_work/p5.png">
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="portfolio-item">
-                    <div class="thumb">
-                        <a href="img/Artist2_work/p6.png" data-lightbox="image-1"><div class="hover-effect">
-                            <div class="hover-content">
-                                <h1>Maya with Doll</h1>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="portfolio-item">
+                            <div class="thumb">
+                                <a href="img/Artist2_work/p6.png" data-lightbox="image-1"><div class="hover-effect">
+                                    <div class="hover-content">
+                                        <h1>Maya with Doll</h1>
+                                    </div>
+                                </div></a>
+                                <div class="image">
+                                    <img src="img/Artist2_work/p6.png">
+                                </div>
                             </div>
-                        </div></a>
-                        <div class="image">
-                            <img src="img/Artist2_work/p6.png">
                         </div>
                     </div>
+                  </div>
+                   
+                    
                 </div>
             </div>
-          </div>
-           
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+            <script>window.jQuery || document.write('<script src="assets/js/jquery-1.11.2.min.js"><\/script>')</script>
+        
+           <!-- <script src="assets/js/bootstrap.min.js"></script>-->
             
+            <script src="assets/js/plugins.js"></script> 
+            <script src="assets/js/a_main1.js"></script>
+      </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="copyright-box">
+              <p class="copyright">
+                &copy; Copyright <strong>VG</strong>. All Rights Reserved
+              </p>
+              <div class="credits"></div>
+            </div>
+          </div>
         </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="assets/js/jquery-1.11.2.min.js"><\/script>')</script>
+      </div>
+    </footer>
+    <!-- End  Footer -->
 
-   <!-- <script src="assets/js/bootstrap.min.js"></script>-->
-    
-    <script src="assets/js/plugins.js"></script> 
-    <script src="assets/js/a_main1.js"></script> 
-
-
- <!-- ======= Contact Section ======= -->
- <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
-    <div class="overlay-mf"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="contact-mf">
-            <div id="contact" class="box-shadow-full">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="title-box-2">
-                    <h5 class="title-left">
-                      Send Message Us
-                    </h5>
-                  </div>
-                  <div>
-                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                      <div class="row">
-                        <div class="col-md-12 mb-3">
-                          <div class="form-group">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                          </div>
-                        </div>
-                        <div class="col-md-12 mb-3">
-                          <div class="form-group">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                          </div>
-                        </div>
-                        <div class="col-md-12 mb-3">
-                          <div class="form-group">
-                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <div class="form-group">
-                            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                          </div>
-                        </div>
-                        <div class="col-md-12 text-center my-3">
-                          <div class="loading">Loading</div>
-                          <div class="error-message"></div>
-                          <div class="sent-message">Your message has been sent. Thank you!</div>
-                        </div>
-                        <div class="col-md-12 text-center">
-                          <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+    <!-- Login/Signup Modal -->
+    <div class="modal fade" id="login-modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <!--<button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>-->
+            <div class="modal-form-login bg-white">
+              <h1 class="text-center">Login</h1>
+              <form action="/user.html" class="loginForm">
+                <div class="input-group">
+                  <label for="username" class="label">Username</label>
+                  <input type="text" id="username" class="input" />
+                  <span class="error-message"></span>
                 </div>
-                <div class="col-md-6">
-                  <div class="title-box-2 pt-4 pt-md-0">
-                    <h5 class="title-left">
-                      Get in Touch
-                    </h5>
-                  </div>
-                  <div class="more-info">
-                    <p class="lead">
-                      description
-                    </p>
-                    <ul class="list-ico">
-                      <li><span class="bi bi-geo-alt"></span> ADDRESS</li>
-                      <li><span class="bi bi-phone"></span> NUMBER</li>
-                      <li><span class="bi bi-envelope"></span> MAIL</li>
-                    </ul>
-                  </div>
-                  <div class="socials">
-                    <ul>
-                      <li><a href=""><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
-                      <li><a href=""><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
-                    </ul>
-                  </div>
+                <div class="input-group">
+                  <label for="password" class="label">Password</label>
+                  <input type="password" id="password" class="input" />
+                  <span class="error-message"></span>
                 </div>
-              </div>
+                <div class="col-md-12 text-center">
+                  <button type="submit" class="button2">Login</button>
+                </div>
+                <span class="invalid-user error-message"></span>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section><!-- End Contact Section -->
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
 
-</main><!-- End #main -->
-
-<!-- ======= Footer ======= -->
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="copyright-box">
-          <p class="copyright">&copy; Copyright <strong>AP</strong>. All Rights Reserved</p>
-          <div class="credits">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer><!-- End  Footer -->
-
-</body>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/login.js"></script>
+    <!-- Add these script tags before the closing </body> tag -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
 </html>

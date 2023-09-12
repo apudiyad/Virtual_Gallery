@@ -4,11 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>VIRTUAL ART GALLERY</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
+  <title>VIRTUAL ART GALLERY</title>
+  
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -17,30 +17,47 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/artist_style.css" rel="stylesheet">
+  <link href="assets/css/main_style.css" rel="stylesheet">
+
 
 </head>
 
 <body>
 
-  <!-- ======= Header ======= -->
+  <!-- ======= Header =======  New version ------------------ ----------- -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
-      
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto " href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto active" href="#">Artist</a></li>
-          <li><a class="nav-link scrollto " href="artwork_index.html">Artwork</a></li>
-          <li><a class="nav-link scrollto " href="community_index.html">Community</a></li>
-          <li><a class="nav-link scrollto " href="shop_index.html">Shop</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="nav-link scrollto" href="login_index.html">LOGIN / SIGNUP</a></li>
+          <li>
+            <a class="nav-link scrollto" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="nav-link scrollto active" href="artist_index.html">Artist</a>
+          </li>
+          <li>
+            <a class="nav-link scrollto" href="artwork_index.html">Artwork</a>
+          </li>
+          <li>
+            <a class="nav-link scrollto" href="community_index.html">Community</a
+            >
+          </li>
+          <li>
+            <a class="nav-link scrollto" href="shop_index.html">Shop</a>
+          </li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
+      </nav>
+      <ul class="navbar navbar-right">
+        <li id="user-icon" class="nav-link btn user-icon">
+          <a class="nav-link" data-toggle="modal" data-target="#login-modal">
+            <i class="bi bi-person-circle"></i>
+          </a>
+        </li>
+      </ul>
+      <!-- .navbar -->
     </div>
-  </header><!-- End Header -->
+  </header>
+  <!-- End Header -->
 
  
 
@@ -79,21 +96,7 @@
                   </div>
                 </div>
                 <h3 class="card-title"><a href="artist1.html"> More info </a></h3>
-                <!--<p class="card-description">
-                   Des
-                </p> -->
               </div>
-              <!--<div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="A2.webp" alt="" class="avatar rounded-circle">
-                    <span class="author"> xyz </span>
-                  </a>
-                </div>
-                <div class="post-date">
-                  <span class="bi bi-clock"></span> 10 min
-                </div>
-              </div> -->
             </div>
           </div>
           <div class="col-md-4">
@@ -108,21 +111,7 @@
                   </div>
                 </div>
                 <h3 class="card-title"><a href="artist2.html"> More info</a></h3>
-              <!--  <p class="card-description">
-                  DESC
-                </p>-->
               </div>
-             <!-- <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="A1.jpeg" alt="" class="avatar rounded-circle">
-                    <span class="author"> xyz</span>
-                  </a>
-                </div>
-                <div class="post-date">
-                  <span class="bi bi-clock"></span> 10 min
-                </div>
-              </div> -->
             </div>
           </div>
           <div class="col-md-4">
@@ -137,28 +126,14 @@
                   </div>
                 </div>
                 <h3 class="card-title"><a href="artist3.html">More info</a></h3>
-               <!--<p class="card-description">
-                  DESC
-                </p> -->
               </div>
-             <!-- <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="A1.jpeg" alt="" class="avatar rounded-circle">
-                    <span class="author">xyz</span>
-                  </a>
-                </div>
-                <div class="post-date">
-                  <span class="bi bi-clock"></span> 10 min
-                </div>
-              </div> -->
             </div>
           </div>
         </div>
       </div>
-    </section><!-- End Blog Section -->
+    </section><!-- End Artist Section -->
 
-    <!-- ======= Contact Section ======= -->
+    <!-- ======= Contact Section ======= 
     <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
       <div class="overlay-mf"></div>
       <div class="container">
@@ -237,7 +212,7 @@
           </div>
         </div>
       </div>
-    </section><!-- End Contact Section -->
+    </section> End Contact Section --> 
 
   </main><!-- End #main -->
 
@@ -247,7 +222,7 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="copyright-box">
-            <p class="copyright">&copy; Copyright <strong>AP</strong>. All Rights Reserved</p>
+            <p class="copyright">&copy; Copyright <strong>VG</strong>. All Rights Reserved</p>
             <div class="credits">
             </div>
           </div>
