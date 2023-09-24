@@ -26,6 +26,7 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/main_style.css" rel="stylesheet" />
     <link href="assets/css/login.css" rel="stylesheet" />
+    <link href="assets/css/send.css"/>
 
     <style>
       .button2 {
@@ -508,12 +509,11 @@
                         <h5 class="title-left">Send Message Us</h5>
                       </div>
                       <div>
-                        <form
-                          action="forms/contact.php"
-                          method="post"
+                        <form 
+                          action="#contact" 
                           role="form"
-                          class="php-email-form"
-                        >
+                          >
+                        
                           <div class="row">
                             <div class="col-md-12 mb-3">
                               <div class="form-group">
@@ -563,19 +563,31 @@
                               </div>
                             </div>
                             <div class="col-md-12 text-center my-3">
-                              <div class="loading">Loading</div>
+                              <!--<div class="loading">Loading</div>-->
                               <div class="error-message"></div>
-                              <div class="sent-message">
+                              <!--<div class="sent-message">
                                 Your message has been sent. Thank you!
-                              </div>
+                              </div>-->
                             </div>
                             <div class="col-md-12 text-center">
                               <button
                                 type="submit"
-                                class="button button-a button-big button-rouded"
-                              >
+                                class="click-here button button-a button-big button-rouded">
                                 Send Message
                               </button>
+                              <!-- button exp-->
+                              <div class="custom-model-main">
+                                <div class="custom-model-inner">
+                                   <div class="close-btn">×</div>
+                                   <div class="custom-model-wrap">
+                                      <div class="pop-up-content-wrap">
+                                         <h2>message sent</h2>
+                                      </div>
+                                   </div>
+                                </div>
+                                <div class="bg-overlay"></div>
+                             </div>
+                              <!--  -->
                             </div>
                           </div>
                         </form>
@@ -688,8 +700,11 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/login.js"></script>
+    <script src="assests/js/send.js"></script>
     <!-- Add these script tags before the closing </body> tag -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
   </body>
 </html>
