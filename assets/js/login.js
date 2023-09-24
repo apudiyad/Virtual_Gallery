@@ -25,12 +25,12 @@ class Login {
           localStorage.setItem("auth", 1);
           var authValue = localStorage.getItem("auth");
           this.form.submit();
-          this.form.reset();
         } else {
           console.log(username + " " + password);
           self.invalidUserDetails();
           this.form.reset();
         }
+        this.form.reset();
       }
     });
   }
