@@ -76,3 +76,17 @@ if (form) {
   const fields = ["username", "password"];
   const validator = new Login(form, fields);
 }
+
+const navBarLogin = document.getElementById("navbar-login");
+if (localStorage.getItem("auth") == 1) {
+  navBarLogin.innerHTML = "<li><a class=\"nav-link btn\" href=\"user.html\">Admin</a></li>"
+    + "<li><a class=\"nav-link btn\" id=\"logoutBtn\">Logout</a><li>";
+} else {
+  navBarLogin.innerHTML = "<li><a class=\"nav-link btn\" data-toggle=\"modal\" data-target=\"#login-modal\">Login</a></li>";
+}
+
+const logoutBtn = document.getElementById('logoutBtn');
+logoutBtn.addEventListener('click', function () {
+  localStorage.removeItem("auth");
+  window.location.href = "/index.html";
+}, false);

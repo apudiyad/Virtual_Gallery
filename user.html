@@ -16,10 +16,10 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/main_style.css" rel="stylesheet">  
-  <link href="assets/css/user.css" rel="stylesheet"> 
   <link href="assets/css/artist_style.css" rel="stylesheet">
-
+  <link href="assets/css/main_style.css" rel="stylesheet">
+  <link href="assets/css/user.css" rel="stylesheet">
+  <link href="assets/css/login.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -27,88 +27,97 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
-      
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto " href="artist_index.html">Artist</a></li>
-          <li><a class="nav-link scrollto " href="artwork_index.html">Artwork</a></li>
-          <li><a class="nav-link scrollto " href="community_index.html">Community</a></li>
-          <li><a class="nav-link scrollto " href="shop_index.html">Shop</a></li>
+          <li>
+            <a class="nav-link scrollto" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="nav-link scrollto" href="artist_index.html">Artist</a>
+          </li>
+          <li>
+            <a class="nav-link scrollto" href="artwork_index.html">Artwork</a>
+          </li>
+          <li>
+            <a class="nav-link scrollto" href="community_index.html">Community</a>
+          </li>
+          <li>
+            <a class="nav-link scrollto" href="shop_index.html">Shop</a>
+          </li>
+          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
+      </nav>
+      <nav class="navbar navbar-right">
+        <ul id="navbar-login"></ul>
+      </nav>
+      <!-- .navbar -->
     </div>
   </header><!-- End Header -->
 
- 
+
   <main id="main">
     <div class="container">
-        <div class="main-body">    
-            
-             <div class="row gutters-sm">
-                <div class="col-md-4 mb-3">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="d-flex flex-column align-items-center text-center">
-                        <img src="img/user.jpg" alt="Admin" class="rounded-circle" width="150">
-                        <div class="mt-3">
-                          <h4>User id</h4>
-                          <p class="text-secondary mb-1">Full Name</p>                     
-                        </div>
-                      </div>
-                    </div>
-                  </div>             
-                </div>
-                <div class="col-md-8">
-                  <div class="card mb-3">
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <h6 class="mb-0">Full Name</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                          Name of the User
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <h6 class="mb-0">Email</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                          xyz@gmail.com
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <h6 class="mb-0">Phone</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                          (234)-345-455
-                        </div>
-                      </div>
-                      <hr>
-                      <br>
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-sm-2 text-center ">
-                            <a class="btn btn-info button button-a button-big button-rouded ">Edit</a>
-                          </div>    
-                          <div class="col-sm-10 text-center">
-                            <a class="btn btn-info  button button-a button-big button-rouded" id="logoutBtn">Logout</a>
-                          </div>                    
-                        </div>  
-                      </div>
-                                          
-                    </div>
-                  </div>              
+      <div class="main-body">
+
+        <div class="row gutters-sm">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex flex-column align-items-center text-center">
+                  <img src="img/user.jpg" alt="Admin" class="rounded-circle" width="150">
+                  <div class="mt-3">
+                    <h4>User id</h4>
+                    <p class="text-secondary mb-1">Full Name</p>
+                  </div>
                 </div>
               </div>
-            </div> 
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card mb-3">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <h6 class="mb-0">Full Name</h6>
+                  </div>
+                  <div class="col-sm-9 text-secondary">
+                    Name of the User
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <h6 class="mb-0">Email</h6>
+                  </div>
+                  <div class="col-sm-9 text-secondary">
+                    xyz@gmail.com
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <h6 class="mb-0">Phone</h6>
+                  </div>
+                  <div class="col-sm-9 text-secondary">
+                    (234)-345-455
+                  </div>
+                </div>
+                <hr>
+                <br>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-2 text-center ">
+                      <a class="btn btn-info button button-a button-big button-rouded ">Edit</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
 
     <!-- ======= Community Cards ======= -->
     <section id="upcoming" class="services-mf pt-5 route">
@@ -180,7 +189,7 @@
       </div>
     </section><!-- End Education and Work Experience Section -->
 
-    
+
 
     <!-- ======= Saved Artwork ======= -->
     <section id="projects" class="portfolio-mf sect-pt4 route">
@@ -189,7 +198,7 @@
           <div class="col-sm-12">
             <div class="title-box text-center">
               <h3 class="title-a">
-                 Saved Artwork 
+                Saved Artwork
               </h3>
               <div class="line-mf"></div>
             </div>
@@ -205,7 +214,7 @@
               </a>
               <div class="work-content">
                 <div class="row">
-               <!--   <div class="col-sm-8">
+                  <!--   <div class="col-sm-8">
                     <h2 class="w-title">Museum Name</h2>
                     <div class="w-more">
                       <span class="w-ctegory">Location</span> / <span class="w-date">Featured Artist</span>
@@ -229,7 +238,7 @@
               </a>
               <div class="work-content">
                 <div class="row">
-                <!--  <div class="col-sm-8">
+                  <!--  <div class="col-sm-8">
                     <h2 class="w-title">Museum Name</h2>
                     <div class="w-more">
                         <span class="w-ctegory">Location</span> / <span class="w-date">Featured Artist</span>
@@ -253,7 +262,7 @@
               </a>
               <div class="work-content">
                 <div class="row">
-               <!--   <div class="col-sm-8">
+                  <!--   <div class="col-sm-8">
                     <h2 class="w-title">Museum Name</h2>
                     <div class="w-more">
                         <span class="w-ctegory">Location</span> / <span class="w-date">Featured Artist</span>
@@ -277,7 +286,7 @@
               </a>
               <div class="work-content">
                 <div class="row">
-              <!--    <div class="col-sm-8">
+                  <!--    <div class="col-sm-8">
                     <h2 class="w-title">Museum Name</h2>
                     <div class="w-more">
                         <span class="w-ctegory">Location</span> / <span class="w-date">Featured Artist</span>
@@ -301,7 +310,7 @@
               </a>
               <div class="work-content">
                 <div class="row">
-                 <!-- <div class="col-sm-8">
+                  <!-- <div class="col-sm-8">
                     <h2 class="w-title">Museum Name</h2>
                     <div class="w-more">
                         <span class="w-ctegory">Location</span> / <span class="w-date">Featured Artist</span>
@@ -324,7 +333,7 @@
                 </div>
               </a>
               <div class="work-content">
-              <!--  <div class="row">
+                <!--  <div class="row">
                   <div class="col-sm-8">
                     <h2 class="w-title">Museum Name</h2>
                     <div class="w-more">
@@ -336,18 +345,18 @@
                       <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
                     </div>
                   </div>-->
-                </div>
               </div>
             </div>
           </div>
-
         </div>
+
+      </div>
       </div>
     </section><!-- End Project Section -->
 
-    
 
-    
+
+
 
   </main><!-- End #main -->
 
@@ -366,10 +375,43 @@
     </div>
   </footer><!-- End  Footer -->
 
-  
+
 
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Login/Signup Modal -->
+  <div class="modal fade" id="login-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"></span>
+          </button>
+          <div class="modal-form-login bg-white">
+            <h1 class="text-center">Login</h1>
+            <form action="/user.html" class="loginForm">
+              <div class="input-group">
+                <label for="username" class="label">Username</label>
+                <input type="text" id="username" class="input" />
+                <span class="error-message"></span>
+              </div>
+              <div class="input-group">
+                <label for="password" class="label">Password</label>
+                <input type="password" id="password" class="input" />
+                <span class="error-message"></span>
+              </div>
+              <div class="col-md-12 text-center">
+                <button type="submit" class="button2">Login</button>
+              </div>
+              <span class="invalid-user error-message"></span>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -381,13 +423,12 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/login.js"></script>
   <script>
-    var logoutBtn = document.getElementById('logoutBtn');
-    logoutBtn.addEventListener('click', function() {
-      localStorage.removeItem("auth");
-      window.location.href = "/index.html";
-    }, false);
+
   </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 

@@ -59,13 +59,9 @@
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <ul class="navbar navbar-right">
-        <li id="user-icon" class="nav-link btn user-icon">
-          <a class="nav-link" data-toggle="modal" data-target="#login-modal">
-            <i class="bi bi-person-circle"></i>
-          </a>
-        </li>
-      </ul>
+      <nav class="navbar navbar-right">
+        <ul id="navbar-login"></ul>
+      </nav>
       <!-- .navbar -->
     </div>
   </header>
@@ -559,16 +555,16 @@
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
+
+
   <!-- Login/Signup Modal -->
   <div class="modal fade" id="login-modal">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-body">
-          <!--<button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="modal"
-            ></button>-->
+          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"></span>
+          </button>
           <div class="modal-form-login bg-white">
             <h1 class="text-center">Login</h1>
             <form action="/user.html" class="loginForm">
