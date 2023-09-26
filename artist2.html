@@ -17,8 +17,9 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main_style.css" rel="stylesheet">
-  
+
   <link href="assets/css/artiststyle.css" rel="stylesheet">
+  <link href="assets/css/login.css" rel="stylesheet" />
 
 
 </head>
@@ -28,56 +29,63 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
-      
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto " href="artist_index.html">Artist</a></li>
-          <li><a class="nav-link scrollto " href="artwork_index.html">Artwork</a></li>
-          <li><a class="nav-link scrollto " href="community_index.html">Community</a></li>
-          <li><a class="nav-link scrollto " href="shop_index.html">Shop</a></li>
+          <li>
+            <a class="nav-link scrollto" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="nav-link scrollto" href="artist_index.html">Artist</a>
+          </li>
+          <li>
+            <a class="nav-link scrollto" href="artwork_index.html">Artwork</a>
+          </li>
+          <li>
+            <a class="nav-link scrollto" href="community_index.html">Community</a>
+          </li>
+          <li>
+            <a class="nav-link scrollto" href="shop_index.html">Shop</a>
+          </li>
+          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
         </ul>
-      </nav><!-- .navbar -->
-      <ul class="navbar navbar-right">
-        <li id="user-icon" class="nav-link btn user-icon">
-          <a class="nav-link" data-toggle="modal" data-target="#login-modal">
-            <i class="bi bi-person-circle"></i>
-          </a>
-        </li>
-      </ul>
-
+      </nav>
+      <nav class="navbar navbar-right">
+        <ul id="navbar-login"></ul>
+      </nav>
+      <!-- .navbar -->
     </div>
   </header><!-- End Header -->
 
-  
+
 
   <main id="main">
 
     <section class="section">
-        <div class="section__container">
-          <div class="content">
-            <h1 class="title">
-            <span>Pablo Picasso<br />a Spanish Painter</span> 
-            </h1>
-            <p class="description">
-              The Spanish born artist had become the most well-known name in modern art, with the most distinct style and eye for artistic creation.
-            </p>
-            <div class="action__btns">         
+      <div class="section__container">
+        <div class="content">
+          <h1 class="title">
+            <span>Pablo Picasso<br />a Spanish Painter</span>
+          </h1>
+          <p class="description">
+            The Spanish born artist had become the most well-known name in modern art, with the most distinct style and
+            eye for artistic creation.
+          </p>
+          <div class="action__btns">
              <button class="portfolio" onclick="redirectToPage()" >Portfolio</button> 
-             <script>
+            <script>
               // JavaScript to another HTML page
               function redirectToPage() {
-                  // path to the HTML page
-                  window.location.href = 'artist2_portfolio.html';
+                // path to the HTML page
+                window.location.href = 'artist2_portfolio.html';
               }
-          </script>
-            </div>
-          </div>
-          <div class="image1">
-            <img src="img/Artist2.jpg" alt="profile" />
+            </script>
           </div>
         </div>
-      </section>
+        <div class="image1">
+          <img src="img/Artist2.jpg" alt="profile" />
+        </div>
+      </div>
+    </section>
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -95,7 +103,37 @@
     </div>
   </footer><!-- End  Footer -->
 
-  
+  <!-- Login/Signup Modal -->
+  <div class="modal fade" id="login-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"></span>
+          </button>
+          <div class="modal-form-login bg-white">
+            <h1 class="text-center">Login</h1>
+            <form action="/user.html" class="loginForm">
+              <div class="input-group">
+                <label for="username" class="label">Username</label>
+                <input type="text" id="username" class="input" />
+                <span class="error-message"></span>
+              </div>
+              <div class="input-group">
+                <label for="password" class="label">Password</label>
+                <input type="password" id="password" class="input" />
+                <span class="error-message"></span>
+              </div>
+              <div class="col-md-12 text-center">
+                <button type="submit" class="button2">Login</button>
+              </div>
+              <span class="invalid-user error-message"></span>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -110,6 +148,10 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/login.js"></script>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 
