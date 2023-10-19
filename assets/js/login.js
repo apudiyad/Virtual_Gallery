@@ -88,5 +88,6 @@ if (localStorage.getItem("auth") == 1) {
 const logoutBtn = document.getElementById('logoutBtn');
 logoutBtn.addEventListener('click', function () {
   localStorage.removeItem("auth");
+  localStorage.removeItem("savedArtworks");
   window.location.href = "/index.html";
 }, false);
