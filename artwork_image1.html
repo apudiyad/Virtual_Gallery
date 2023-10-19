@@ -81,7 +81,7 @@
                 window.location.href = 'artist1.html';
               }
             </script>
-            <button id="123" class="save hidden" onclick="JavaScript:alert('Image Saved')">Save</button>
+            <button id="M1" class="save hidden">Save</button>
             <script>
               document.addEventListener('DOMContentLoaded', function () {
                 const button = document.querySelector('.save');
@@ -89,10 +89,10 @@
                 var authValue = localStorage.getItem("auth");
 
                 if (authValue == '1') {
-                  var element = document.getElementById("123");
+                  var element = document.getElementById("M1");
                   element.classList.remove("hidden");
                   button.addEventListener('click', function () {
-                    const artworkId = button.getAttribute('data-artwork-id');
+                    const artworkId = button.getAttribute('id');
                     const savedArtworks = JSON.parse(localStorage.getItem('savedArtworks')) || [];
 
                     if (!savedArtworks.includes(artworkId)) {
