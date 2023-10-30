@@ -78,9 +78,11 @@ if (form) {
 }
 
 const navBarLogin = document.getElementById("navbar-login");
+const saveinfo = document.getElementById("saveinfo")
 if (localStorage.getItem("auth") == 1) {
   navBarLogin.innerHTML = "<li><a class=\"nav-link btn\" href=\"user.html\">Admin</a></li>"
     + "<li><a class=\"nav-link btn\" id=\"logoutBtn\">Logout</a><li>";
+  saveinfo.hidden = true;
 } else {
   navBarLogin.innerHTML = "<li><a class=\"nav-link btn\" data-toggle=\"modal\" data-target=\"#login-modal\">Login</a></li>";
 }
