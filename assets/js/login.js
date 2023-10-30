@@ -78,18 +78,24 @@ if (form) {
 }
 
 const navBarLogin = document.getElementById("navbar-login");
-const saveinfo = document.getElementById("saveinfo")
 if (localStorage.getItem("auth") == 1) {
   navBarLogin.innerHTML = "<li><a class=\"nav-link btn\" href=\"user.html\">Admin</a></li>"
     + "<li><a class=\"nav-link btn\" id=\"logoutBtn\">Logout</a><li>";
-  saveinfo.hidden = true;
 } else {
   navBarLogin.innerHTML = "<li><a class=\"nav-link btn\" data-toggle=\"modal\" data-target=\"#login-modal\">Login</a></li>";
 }
 
+const saveinfo = document.getElementById("saveinfo")
+if (saveinfo != null && localStorage.getItem("auth") == 1) {
+  saveinfo.hidden = true;
+}
+
 const logoutBtn = document.getElementById('logoutBtn');
-logoutBtn.addEventListener('click', function () {
-  localStorage.removeItem("auth");
-  localStorage.removeItem("savedArtworks");
-  window.location.href = "/index.html";
-}, false);
+if (logoutBtn != null) {
+  logoutBtn.addEventListener('click', function () {
+    localStorage.removeItem("auth");
+    localStorage.removeItem("savedArtworks");
+    window.location.href = "/index.html";
+  }, false);
+}
+
