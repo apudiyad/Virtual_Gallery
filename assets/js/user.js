@@ -28,7 +28,8 @@ function getImgFile(imageId) {
     fileUrl = "";
     switch (imageId) {
         case "M1":
-            fileName = "img/M1.png";
+            file = "img/M1.png";
+            fileUrl = "artwork_image1.html"
             break;
         case "M2":
             file = "img/M2.png";
