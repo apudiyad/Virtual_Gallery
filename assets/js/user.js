@@ -3,13 +3,13 @@ if (localStorage.getItem("savedArtworks") != null) {
     htmlToInsert = "";
     imageArr = JSON.parse(localStorage.getItem("savedArtworks"))
     imageArr.forEach(element => {
-        imageFile = getImgFile(element);
-        if (imageFile) {
+        image = getImgFile(element);
+        if (image) {
             htmlToInsert += "<div class=\"col-md-4\">"
                 + "<div class=\"work-box\">"
-                + "<a href=\"" + imageFile + "\" data-gallery=\"portfolioGallery\" class=\"portfolio-lightbox\">"
+                + "<a href=\"" + image[1] + "\" data-gallery=\"portfolioGallery\" class=\"portfolio-lightbox\">"
                 + "<div class=\"work-img\">"
-                + "<img src=\"" + imageFile + "\" alt=\"\" class=\"img-fluid\">"
+                + "<img src=\"" + image[0] + "\" alt=\"\" class=\"img-fluid\">"
                 + "</div>"
                 + "</a>"
                 + "<div class=\"work-content\">"
@@ -24,35 +24,45 @@ if (localStorage.getItem("savedArtworks") != null) {
 }
 
 function getImgFile(imageId) {
-    fileName = "";
+    file = "";
+    fileUrl = "";
     switch (imageId) {
         case "M1":
-            //fileName = "img/M1.png";
+            fileName = "img/M1.png";
             break;
         case "M2":
-            fileName = "img/M2.png";
+            file = "img/M2.png";
+            fileUrl = "artwork_image2.html"
             break;
         case "M3":
-            fileName = "img/M3.png";
+            file = "img/M3.png";
+            fileUrl = "artwork_image3.html"
             break;
         case "M4":
-            fileName = "img/M4.png";
+            file = "img/M4.png";
+            fileUrl = "artwork_image4.html"
             break;
         case "M7":
-            fileName = "img/M7.png";
+            file = "img/M7.png";
+            fileUrl = "artwork_image7.html"
             break;
         case "M8":
-            fileName = "img/M8.png";
+            file = "img/M8.png";
+            fileUrl = "artwork_image8.html"
             break;
         case "P1":
-            fileName = "img/p1.png";
+            file = "img/p1.png";
+            fileUrl = "artwork_imageP1.html"
             break;
         case "P2":
-            fileName = "img/p2.png";
+            file = "img/p2.png";
+            fileUrl = "artwork_imageP2.html"
             break;
         case "P3":
-            fileName = "img/p3.png";
+            file = "img/p3.png";
+            fileUrl = "artwork_imageP3.html"
             break;
     }
-    return fileName;
+    var image = [file, fileUrl];
+    return image;
 }
