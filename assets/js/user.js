@@ -27,7 +27,7 @@ function getImgFile(imageId) {
     fileName = "";
     switch (imageId) {
         case "M1":
-            fileName = "img/M1.png";
+            //fileName = "img/M1.png";
             break;
         case "M2":
             fileName = "img/M2.png";
