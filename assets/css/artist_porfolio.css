@@ -17,9 +17,7 @@ body {
   background-color: #000000;
 }
 
-.grid-portfolio .portfolio-item {
-  margin: 15px 0px;
-}
+
 
 .portfolio-item .hover-effect .hover-content {
     position: relative;
@@ -99,9 +97,33 @@ body {
 }
 
 
-.portfolio-item img {
-  width: 100%;
+.grid-portfolio .portfolio-item {
+  position: relative;
   overflow: hidden;
+}
+
+.grid-portfolio .portfolio-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  .grid-portfolio .portfolio-item img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 991px) {
+  .grid-portfolio .portfolio-item img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 767px) {
+  .grid-portfolio .portfolio-item img {
+    height: 150px;
+  }
 }
 
 .portfolio-item .thumb {
