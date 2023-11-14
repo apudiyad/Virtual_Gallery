@@ -63,6 +63,43 @@ function getImgFile(imageId) {
             file = "img/p3.png";
             fileUrl = "artwork_imageP3.html"
             break;
+        case "P5":
+            file = "img/Artist2_work/p5.png";
+            fileUrl = "artwork_imageP1.html"
+            break;
+        case "P6":
+            file = "img/Artist2_work/p6.png";
+            fileUrl = "artwork_imageP2.html"
+            break;
+        case "P7":
+            file = "img/Artist2_work/p7.png";
+            fileUrl = "artwork_imageP7.html"
+            break;
+        case "F1":
+            file = "img/Artist3_work/f1.png";
+            fileUrl = "artwork_imageF1.html"
+            break;
+        case "F2":
+            file = "img/Artist3_work/f2.png";
+            fileUrl = "artwork_imageF2.html"
+            break;
+        case "F3":
+            file = "img/Artist3_work/f3.png";
+            fileUrl = "artwork_imageF3.html"
+            break;
+        case "F4":
+            file = "img/Artist3_work/f4.png";
+            fileUrl = "artwork_imageF4.html"
+            break;
+        case "F5":
+            file = "img/Artist3_work/f5.png";
+            fileUrl = "artwork_imageF5.html"
+            break;
+        case "F6":
+            file = "img/Artist3_work/f6.png";
+            fileUrl = "artwork_imageF6.html"
+            break;
+
     }
     var image = [file, fileUrl];
     return image;
