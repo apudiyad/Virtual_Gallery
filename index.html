@@ -46,14 +46,35 @@
   text-align:center;
   box-shadow: 2px 2px 3px #999;
 }
+.float {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bi-envelope {
+  /* Adjust these values as needed */
+  font-size: 24px; /* Example size, adjust as needed */
+  line-height: 1; /* Default line-height to ensure vertical center */
+}
 
 .my-float{
-  margin-top:22px;
+  /* margin-top:22px; */
 }
 /* Custom Modal Width */
 .custom-modal-width {
-    max-width: 90%; /* Adjust this value to suit your needs */
+    max-width: 60%; /* Adjust this value to suit your needs */
   }
+  .modal-title {
+  text-align: center;
+  width: 100%;
+}
+  .register-link:hover {
+      color: #a8dd08 !important; /* Change the color to whatever you want for the hover effect */
+      font-weight: bold; /* Make the text bold on hover */
+    }
+    .modal-body {
+  margin-top: -40px; /* Negative value reduces space */
+}
   </style>
 </head>
 
@@ -381,7 +402,7 @@
   <div class="modal-dialog custom-modal-width" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+        <h1 class="modal-title" id="contactModalLabel" style="margin-top: 35px;">Contact Us</h1>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -392,7 +413,7 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="title-box-2">
-                  <h5 class="title-left">Send Us Message</h5>
+                  <h5 class="title-left" style="margin-top: 35px;">Send Us Message</h5>
                 </div>
                 <div>
                   <form action="your-form-submission-link" method="POST" role="form" class="php-email-form">
@@ -580,8 +601,8 @@
               <br>
               <div>
                 <div class="col-md-12" style="text-align: left;">
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScUmi1YTWF26Q9mXEi9GYeqggCOsvb3zp0-sagnTwBb2vz3JA/viewform?embedded=true" style="color: #0b5345;">Register for a new account!</a>
-                </div>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScUmi1YTWF26Q9mXEi9GYeqggCOsvb3zp0-sagnTwBb2vz3JA/viewform?embedded=true" class="register-link" style="color: #0b5345;">Register for a new account!</a>
+                </div>                
                 <div class="col-md-12" style="text-align: end;">
                   <button type="submit" class="button2">Sign in</button>
                 </div>

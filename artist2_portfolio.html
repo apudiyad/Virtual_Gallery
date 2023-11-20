@@ -51,6 +51,14 @@
 .custom-modal-width {
     max-width: 90%; /* Adjust this value to suit your needs */
   }
+  .register-link:hover {
+      color: #a8dd08 !important; /* Change the color to whatever you want for the hover effect */
+      font-weight: bold; /* Make the text bold on hover */
+    }
+    .modal-title {
+  text-align: center;
+  width: 100%;
+}
   </style>
 
 
@@ -199,7 +207,7 @@
   <div class="modal-dialog custom-modal-width" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+        <h1 class="modal-title" id="contactModalLabel" style="margin-top: 50px;">Contact Us</h1>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -420,7 +428,7 @@
                 <br>
                 <div>
                   <div class="col-md-12" style="text-align: left;">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScUmi1YTWF26Q9mXEi9GYeqggCOsvb3zp0-sagnTwBb2vz3JA/viewform?embedded=true" style="color: #0b5345;">Register for a new account!</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScUmi1YTWF26Q9mXEi9GYeqggCOsvb3zp0-sagnTwBb2vz3JA/viewform?embedded=true" class="register-link" style="color: #0b5345;">Register for a new account!</a>
                   </div>
                   <div class="col-md-12" style="text-align: end;">
                     <button type="submit" class="button2">Sign in</button>
