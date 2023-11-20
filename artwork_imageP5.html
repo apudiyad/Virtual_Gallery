@@ -21,6 +21,7 @@
     <link href="assets/css/main_style.css" rel="stylesheet">
     <link href="assets/css/login.css" rel="stylesheet" />
     <link href="assets/css/send.css" />
+    <link href="assets/css/login_modal.css" rel="stylesheet" />
 
   <style>
     .float{
@@ -332,34 +333,41 @@
 
     <!-- Login/Signup Modal -->
     <div class="modal fade" id="login-modal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"></span>
-                    </button>
-                    <div class="modal-form-login bg-white">
-                        <h1 class="text-center">Login</h1>
-                        <form action="/user.html" class="loginForm">
-                            <div class="input-group">
-                                <label for="username" class="label">Username</label>
-                                <input type="text" id="username" class="input" />
-                                <span class="error-message"></span>
-                            </div>
-                            <div class="input-group">
-                                <label for="password" class="label">Password</label>
-                                <input type="password" id="password" class="input" />
-                                <span class="error-message"></span>
-                            </div>
-                            <div class="col-md-12 text-center">
-                                <button type="submit" class="button2">Login</button>
-                            </div>
-                            <span class="invalid-user error-message"></span>
-                        </form>
-                    </div>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"></span>
+            </button>
+            <div class="modal-form-login bg-white">
+              <h1 class="text-center">LOGIN</h1>
+              <br/>
+              <form action="/user.html" class="loginForm">
+                <div class="input-group form-outline">
+                  <label for="username" class="label form-label">Username</label>
+                  <input type="text" id="username" class="input" />
+                  <span class="error-message"></span>
                 </div>
+                <div class="input-group form-outline">
+                  <label for="password" class="label form-label">Password</label>
+                  <input type="password" id="password" class="input" />
+                  <span class="error-message"></span>
+                </div>
+                <br>
+                <div>
+                  <div class="col-md-12" style="text-align: left;">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScUmi1YTWF26Q9mXEi9GYeqggCOsvb3zp0-sagnTwBb2vz3JA/viewform?embedded=true" style="color: #0b5345;">Register for a new account!</a>
+                  </div>
+                  <div class="col-md-12" style="text-align: end;">
+                    <button type="submit" class="button2">Sign in</button>
+                  </div>
+                </div>
+                <span class="invalid-user error-message"></span>
+              </form>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <div id="preloader"></div>

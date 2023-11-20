@@ -84,8 +84,7 @@ if (localStorage.getItem("auth") == 1) {
   + "<li><a class=\"nav-link btn\" href=\"user.html#savedart\">Saved Art</a></li>"
   + "<li><a class=\"nav-link btn\" id=\"logoutBtn\">Logout</a><li>";
 } else {
-  navBarLogin.innerHTML = "<li><a class=\"nav-link btn\" data-toggle=\"modal\" data-target=\"#login-modal\">Login</a></li>"
-  + "<li><a href=\"https://docs.google.com/forms/d/e/1FAIpQLScUmi1YTWF26Q9mXEi9GYeqggCOsvb3zp0-sagnTwBb2vz3JA/viewform?embedded=true\" target=\"#\">Register</a></li>";
+  navBarLogin.innerHTML = "<li><a class=\"nav-link btn\" data-toggle=\"modal\" data-target=\"#login-modal\">Login</a></li>";
 }
 
 const saveinfo = document.getElementById("saveinfo")
