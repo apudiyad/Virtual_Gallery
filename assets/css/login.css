@@ -8,23 +8,6 @@
     /* Adjust the font-size as needed to increase the icon size */
 }
 
-.modal-dialog {
-  background: white;
-}
-
-.btn-close {
-  position: absolute;
-  right: 0;
-}
-
-.modal-backdrop {
-  z-index: -1;
-}
-
-.modal-body label {
-  margin-top: 7px;
-}
-
 .input:focus {
   outline: none;
   background-clip: padding-box;
@@ -82,8 +65,4 @@
   font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem;
-}
-
-.modal-body button {
-  padding: 1%;
 }
