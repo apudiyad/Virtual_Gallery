@@ -99,9 +99,7 @@
     box-shadow: none;
     height: 165px;
     max-height: 220px;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
     max-width: 100%;
     margin-bottom: 25px;
 }
@@ -170,4 +168,8 @@
 .modal .login-form {
     padding-left: 5%;
     padding-right: 5%;
+}
+
+.modal .contact-sec {
+    padding: 3%;
 }
