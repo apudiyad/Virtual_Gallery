@@ -48,13 +48,15 @@ a:hover {
 .work-box,
 .service-box,
 .paralax-mf {
-  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+ /* box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);*/
+  box-shadow: rgb(11, 104, 73,1) 0px 2px 4px 0px, rgba(11,104,73,1) 0px 2px 16px 0px;
 }
 
 .box-shadow-a,
 .button:hover {
   text-decoration: none;
-  box-shadow: 0 0 0 4px #cde1f8;
+ /* box-shadow: 0 0 0 4px #cdf8f0;*/
+  box-shadow: 0 0 0 4px #0b5345;
 }
 
 .display-5 {
@@ -1181,10 +1183,10 @@ a:hover {
 .card-blog .card-category {
   display: inline-block;
   color: #fff;
-  padding: 0 15px 5px;
+  padding: 0 15px 15px;
   overflow: hidden;
   background-color: #0b5345;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 
 .card-blog .card-category .category {
@@ -1210,7 +1212,7 @@ a:hover {
 }
 
 .card-blog .post-date {
-  color: #4e4e4e;
+  color: #db0a0a;
   display: inline-block;
 }
 
