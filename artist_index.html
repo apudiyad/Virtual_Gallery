@@ -5,45 +5,48 @@
 
 
 <head>
-
-  <meta charset="utf-8">
-
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <meta content="" name="description">
-
-  <meta content="" name="keywords">
-
-
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
   <title>VIRTUAL ART GALLERY</title>
-
-
+  <meta content="" name="description" />
+  <meta content="" name="keywords" />
 
   <!-- Vendor CSS Files -->
-
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
   <!-- Template Main CSS File -->
-
-  <link href="assets/css/artist_style.css" rel="stylesheet">
-
-  <link href="assets/css/main_style.css" rel="stylesheet">
-
+  <link href="assets/css/main_style.css" rel="stylesheet" />
   <link href="assets/css/login.css" rel="stylesheet" />
+  <link href="assets/css/send.css" />
+  <link href="assets/css/user.css" rel="stylesheet" />
+  <!-- <link href="assets/css/artist_style.css" rel="stylesheet"> -->
 
+  <style>
+    .float{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#00ffb3;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  box-shadow: 2px 2px 3px #999;
+}
 
-
-
-
+.my-float{
+  margin-top:22px;
+}
+/* Custom Modal Width */
+.custom-modal-width {
+    max-width: 90%; /* Adjust this value to suit your needs */
+  }
+  </style>
 </head>
 
 
@@ -66,9 +69,6 @@
           </li>
           <li>
             <a class="nav-link scrollto" href="artwork_index.html">Artwork</a>
-          </li>
-          <li>
-            <a class="nav-link scrollto" href="contact.html">Contact</a>
           </li>
         </ul>
       </nav>
@@ -139,7 +139,7 @@
 
                 </div>
 
-                <h3 class="card-title1"><a href="artist1.html">Murakami</a></h3>
+                <h3 class="card-title1" style="text-align:center"><a href="artist1.html">Murakami</a></h3>
 
               </div>
 
@@ -169,7 +169,7 @@
 
                 </div>
 
-                <h3 class="card-title1"><a href="artist2.html">Pablo Picasso</a></h3>
+                <h3 class="card-title1" style="text-align:center"><a href="artist2.html">Pablo Picasso</a></h3>
 
               </div>
 
@@ -199,7 +199,7 @@
 
                 </div>
 
-                <h3 class="card-title1"><a href="artist3.html">Frida kahlo</a></h3>
+                <h3 class="card-title1" style="text-align:center"><a href="artist3.html">Frida kahlo</a></h3>
 
               </div>
 
@@ -212,6 +212,162 @@
       </div>
 
     </section><!-- End Artist Section -->
+    <!-- Contact Icon at bottom right corner -->
+<a href="#contactModal" class="float" data-toggle="modal">
+  <i class="bi bi-envelope my-float"></i>
+</a>
+
+<!-- Contact Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog custom-modal-width" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="contact-mf">
+          <div id="contact" class="box-shadow-full">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="title-box-2">
+                  <h5 class="title-left">Send Us Message</h5>
+                </div>
+                <div>
+                  <form action="your-form-submission-link" method="POST" role="form" class="php-email-form">
+                    <div class="row">
+                      <div class="col-md-12 mb-3">
+                        <div class="form-group">
+                          <label for="name">Your Name <span class="text-danger">*</span></label>
+                        <input
+                         type="text"
+                         name="name"
+                         class="form-control"
+                         id="name"  
+                         placeholder="Your Name"
+    
+                         />
+                          <div class="name-error error-text">
+                            <span class="error-icon"></span>
+                            <span class="error-text"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 mb-3">
+                        <div class="form-group">
+                          <label for="email">Your Email <span class="text-danger">*</span></label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          name="email"
+                          id="email"
+                          placeholder="Your Email"
+                        />
+                          <div class="email-error pop-up-error">
+                            <span class="error-icon"></span>
+                            <span class="error-text"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 mb-3">
+                        <div class="form-group">
+                          <label for="subject">Subject <span class="text-danger">*</span></label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="subject"
+                          id="subject"
+                          placeholder="Subject"
+                        />
+                          <div class="subject-error pop-up-error">
+                            <span class="error-icon"></span>
+                            <span class="error-text"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label for="message">Message <span class="text-danger">*</span></label>
+                        <textarea
+                          class="form-control"
+                          name="message"
+                          rows="5"
+                          placeholder="Message"
+                          
+                        ></textarea>
+                          <div class="message-error pop-up-error">
+                            <span class="error-icon"></span>
+                            <span class="error-text"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 text-center my-3">
+                        <div class="error-message">
+                          <span class="error-text"></span>
+                        </div>
+                      </div>
+                      <div class="col-md-12 text-center">
+                      <button type="submit" class="click-here button button-a button-big button-rouded">Send Message</button>
+                        <!-- button exp-->
+                        <div class="custom-model-main">
+                          <div class="custom-model-inner">
+                            <div class="close-btn"></div>
+                            <div class="custom-model-wrap">
+                              <div class="pop-up-content-wrap">
+                                <h2 class="confirmation-message"></h2>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="bg-overlay"></div>
+                        </div>
+                        <!--  -->
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="title-box-2 pt-4 pt-md-0">
+                  <h5 class="title-left">Get in Touch</h5>
+                </div>
+                <div class="more-info">
+                  <!-- Contact Information -->
+                  <p class="lead">description</p>
+                      <ul class="list-ico">
+                        <li><span class="bi bi-geo-alt"></span> ADDRESS</li>
+                        <li><span class="bi bi-phone"></span> NUMBER</li>
+                        <li><span class="bi bi-envelope"></span> MAIL</li>
+                      </ul>
+                </div>
+                <div class="socials">
+                  <!-- Social Links -->
+                  <ul>
+                    <li>
+                      <a href="https://www.facebook.com/">
+                        <span class="ico-circle">
+                          <i class="bi bi-facebook"></i>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com/">
+                        <span class="ico-circle">
+                          <i class="bi bi-linkedin"></i>
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
   </main><!-- End #main -->
 
 
@@ -350,34 +506,23 @@
 
 
   <!-- Vendor JS Files -->
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/typed.js/typed.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+<script src="assets/js/login.js"></script>
+<script src="assets/js/send.js"></script>
+<script src="assets/js/contact.js"></script>
+<script src="assets/js/a_main.js"></script>
 
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-
-
-  <!-- Template Main JS File -->
-
-  <script src="assets/js/a_main.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/login.js"></script>
   
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
-
 </body>
-
-
-
 </html>
