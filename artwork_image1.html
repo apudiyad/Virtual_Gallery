@@ -25,40 +25,40 @@
 
   <style>
     .float{
-  position:fixed;
-  width:60px;
-  height:60px;
-  bottom:40px;
-  right:40px;
-  background-color:#00ffb3;
-  color:#FFF;
-  border-radius:50px;
-  text-align:center;
-  box-shadow: 2px 2px 3px #999;
-}
+      position:fixed;
+      width:60px;
+      height:60px;
+      bottom:40px;
+      right:40px;
+      background-color:#00ffb3;
+      color:#FFF;
+      border-radius:50px;
+      text-align:center;
+      box-shadow: 2px 2px 3px #999;
+    }
 
-.float {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.bi-envelope {
-  /* Adjust these values as needed */
-  font-size: 24px; /* Example size, adjust as needed */
-  line-height: 1; /* Default line-height to ensure vertical center */
-}
-/* Custom Modal Width */
-.custom-modal-width {
-    max-width: 60%; /* Adjust this value to suit your needs */
-  }
-  .register-link:hover {
+    .float {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .bi-envelope {
+      /* Adjust these values as needed */
+      font-size: 24px; /* Example size, adjust as needed */
+      line-height: 1; /* Default line-height to ensure vertical center */
+    }
+    /* Custom Modal Width */
+    .custom-modal-width {
+      max-width: 60%; /* Adjust this value to suit your needs */
+    }
+    .register-link:hover {
       color: #a8dd08 !important; /* Change the color to whatever you want for the hover effect */
       font-weight: bold; /* Make the text bold on hover */
     }
     .modal-title {
-  text-align: center;
-  width: 100%;
-}
+      text-align: center;
+      width: 100%;
+    }
   </style>
 
 </head>
@@ -116,35 +116,43 @@
                 window.location.href = 'artist1.html';
               }
             </script>
-            <button id="M1" class="save hidden">Save</button>
+            <button id="M1" class="save">Save</button>
             <script>
+              const savedArtworks = JSON.parse(localStorage.getItem('savedArtworks')) || [];
+              const button = document.querySelector('.save');
+              if (savedArtworks.includes(button.getAttribute('id'))) {
+                var element = document.getElementById("M1");
+                element.classList.add("hidden");
+              }
               document.addEventListener('DOMContentLoaded', function () {
                 const button = document.querySelector('.save');
-
                 var authValue = localStorage.getItem("auth");
-
-                if (authValue == '1') {
-                  var element = document.getElementById("M1");
-                  element.classList.remove("hidden");
-                  button.addEventListener('click', function () {
+                button.addEventListener('click', function () {
+                  if (authValue == 1) {
                     const artworkId = button.getAttribute('id');
                     const savedArtworks = JSON.parse(localStorage.getItem('savedArtworks')) || [];
-
                     if (!savedArtworks.includes(artworkId)) {
                       savedArtworks.push(artworkId);
                       localStorage.setItem('savedArtworks', JSON.stringify(savedArtworks));
                       alert('Artwork saved!');
+                      var element = document.getElementById("M1");
+                      element.classList.add("hidden");
                     } else {
                       alert('Artwork is already saved.');
                     }
-                  });
-                }
-              });
+                  } else {
+                    const loginModal = document.getElementById("login-modal");
+                    const modalEl = new bootstrap.Modal(loginModal);
+                    modalEl.show();
+                  }
+                });
+              }
+              );
             </script>
           </div>
         </div>
         <div class="image1">
-                <img src="img/M1.png" id = "image1" alt="profile" />
+          <img src="img/M1.png" id = "image1" alt="profile" />
           <script>
             let image = document.getElementById('image1');
 
@@ -172,35 +180,35 @@
       </div>
     </section>
     <!-- Contact Icon at bottom right corner -->
-<a href="#contactModal" class="float" data-toggle="modal">
-  <i class="bi bi-envelope my-float"></i>
-</a>
+    <a href="#contactModal" class="float" data-toggle="modal">
+      <i class="bi bi-envelope my-float"></i>
+    </a>
 
-<!-- Contact Modal -->
-<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
-  <div class="modal-dialog custom-modal-width" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title" id="contactModalLabel" style="margin-top: 35px;">Contact Us</h1>
-      </div>
-      <div class="modal-body">
-        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close" style="margin-top: -110px;">
-          <span aria-hidden="true"></span>
-        </button>
-        <div class="contact-mf">
-          <div id="contact" class="box-shadow-full">
-            <div class="row">
-              <div class="col-md-6 contact-sec">
-                <div class="title-box-2">
-                  <h5 class="title-left">Send Us Message</h5>
-                </div>
-                <div>
-                  <form action="your-form-submission-link" method="POST" role="form" class="php-email-form">
-                    <div class="row">
-                      <div class="col-md-12 mb-3">
-                        <div class="form-group">
-                          <label for="name">Your Name <span class="text-danger">*</span></label>
-                        <input
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog custom-modal-width" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title" id="contactModalLabel" style="margin-top: 35px;">Contact Us</h1>
+          </div>
+          <div class="modal-body">
+            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close" style="margin-top: -110px;">
+              <span aria-hidden="true"></span>
+            </button>
+            <div class="contact-mf">
+              <div id="contact" class="box-shadow-full">
+                <div class="row">
+                  <div class="col-md-6 contact-sec">
+                    <div class="title-box-2">
+                      <h5 class="title-left">Send Us Message</h5>
+                    </div>
+                    <div>
+                      <form action="your-form-submission-link" method="POST" role="form" class="php-email-form">
+                        <div class="row">
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <label for="name">Your Name <span class="text-danger">*</span></label>
+                              <input
                          type="text"
                          name="name"
                          class="form-control"
@@ -208,116 +216,118 @@
                          placeholder="Your Name"
     
                          />
-                          <div class="name-error error-text">
-                            <span class="error-icon"></span>
-                            <span class="error-text"></span>
+                              <div class="name-error error-text">
+                                <span class="error-icon"></span>
+                                <span class="error-text"></span>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                      </div>
-                      <div class="col-md-12 mb-3">
-                        <div class="form-group">
-                          <label for="email">Your Email <span class="text-danger">*</span></label>
-                        <input
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <label for="email">Your Email <span class="text-danger">*</span></label>
+                              <input
                           type="email"
                           class="form-control"
                           name="email"
                           id="email"
-                          placeholder="Your Email"
+                                placeholder="Your Email"
                         />
-                          <div class="email-error pop-up-error">
-                            <span class="error-icon"></span>
-                            <span class="error-text"></span>
+                              <div class="email-error pop-up-error">
+                                <span class="error-icon"></span>
+                                <span class="error-text"></span>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                      </div>
-                      <div class="col-md-12 mb-3">
-                        <div class="form-group">
-                          <label for="subject">Subject <span class="text-danger">*</span></label>
-                        <input
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <label for="subject">Subject <span class="text-danger">*</span></label>
+                              <input
                           type="text"
                           class="form-control"
                           name="subject"
                           id="subject"
-                          placeholder="Subject"
+                                placeholder="Subject"
                         />
-                          <div class="subject-error pop-up-error">
-                            <span class="error-icon"></span>
-                            <span class="error-text"></span>
+                              <div class="subject-error pop-up-error">
+                                <span class="error-icon"></span>
+                                <span class="error-text"></span>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label for="message">Message <span class="text-danger">*</span></label>
-                        <textarea
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label for="message">Message <span class="text-danger">*</span></label>
+                              <textarea
                           class="form-control"
                           name="message"
                           rows="5"
                           placeholder="Message"
                           
                         ></textarea>
-                          <div class="message-error pop-up-error">
-                            <span class="error-icon"></span>
-                            <span class="error-text"></span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-12 text-center my-3">
-                        <div class="error-message">
-                          <span class="error-text"></span>
-                        </div>
-                      </div>
-                      <div class="col-md-12 text-center">
-                      <button type="submit" class="click-here button button-a button-big button-rouded">Send Message</button>
-                        <!-- button exp-->
-                        <div class="custom-model-main">
-                          <div class="custom-model-inner">
-                            <div class="close-btn"></div>
-                            <div class="custom-model-wrap">
-                              <div class="pop-up-content-wrap">
-                                <h2 class="confirmation-message"></h2>
+                              <div class="message-error pop-up-error">
+                                <span class="error-icon"></span>
+                                <span class="error-text"></span>
                               </div>
                             </div>
                           </div>
-                          <div class="bg-overlay"></div>
+                          <div class="col-md-12 text-center my-3">
+                            <div class="error-message">
+                              <span class="error-text"></span>
+                            </div>
+                          </div>
+                          <div class="col-md-12 text-center">
+                            <button type="submit" class="click-here button button-a button-big button-rouded">Send Message</button>
+                            <!-- button exp-->
+                            <div class="custom-model-main">
+                              <div class="custom-model-inner">
+                                <div class="close-btn"></div>
+                                <div class="custom-model-wrap">
+                                  <div class="pop-up-content-wrap">
+                                    <h2 class="confirmation-message"></h2>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="bg-overlay"></div>
+                            </div>
+                            <!--  -->
+                          </div>
                         </div>
-                        <!--  -->
-                      </div>
+                      </form>
                     </div>
-                  </form>
-                </div>
-              </div>
-              <div class="col-md-6 contact-sec">
-                <div class="title-box-2 pt-4 pt-md-0">
-                  <h5 class="title-left">Get in Touch</h5>
-                </div>
-                <div class="more-info">
-                  <!-- Contact Information -->
-                  <p class="lead">description</p>
+                  </div>
+                  <div class="col-md-6 contact-sec">
+                    <div class="title-box-2 pt-4 pt-md-0">
+                      <h5 class="title-left">Get in Touch</h5>
+                    </div>
+                    <div class="more-info">
+                      <!-- Contact Information -->
+                      <p class="lead">description</p>
                       <ul class="list-ico">
                         <li><span class="bi bi-geo-alt"></span> ADDRESS</li>
                         <li><span class="bi bi-phone"></span> NUMBER</li>
                         <li><span class="bi bi-envelope"></span> MAIL</li>
                       </ul>
-                </div>
-                <div class="socials">
-                  <!-- Social Links -->
-                  <ul>
-                    <li>
-                      <a href="https://www.facebook.com/">
-                        <span class="ico-circle">
-                          <i class="bi bi-facebook"></i>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.linkedin.com/">
-                        <span class="ico-circle">
-                          <i class="bi bi-linkedin"></i>
-                        </span>
-                      </a>
-                    </li>
-                  </ul>
+                    </div>
+                    <div class="socials">
+                      <!-- Social Links -->
+                      <ul>
+                        <li>
+                          <a href="https://www.facebook.com/">
+                            <span class="ico-circle">
+                              <i class="bi bi-facebook"></i>
+                            </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.linkedin.com/">
+                            <span class="ico-circle">
+                              <i class="bi bi-linkedin"></i>
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -325,8 +335,6 @@
         </div>
       </div>
     </div>
-  </div>
-</div>
     <!-- ======= Footer ======= -->
     <footer>
       <div class="container">
@@ -382,7 +390,7 @@
 
     <script src="assets/js/main.js"></script>
     <script src="assets/js/login.js"></script>
-    
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
