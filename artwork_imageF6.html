@@ -116,30 +116,38 @@
                 window.location.href = 'artist2.html';
               }
             </script>
-            <button id="F6" class="save hidden">Save</button>
+            <button id="F6" class="save">Save</button>
             <script>
+              const savedArtworks = JSON.parse(localStorage.getItem('savedArtworks')) || [];
+              const button = document.querySelector('.save');
+              if (savedArtworks.includes(button.getAttribute('id'))) {
+                var element = document.getElementById("F6");
+                element.classList.add("hidden");
+              }
               document.addEventListener('DOMContentLoaded', function () {
                 const button = document.querySelector('.save');
-
                 var authValue = localStorage.getItem("auth");
-
-                if (authValue == '1') {
-                  var element = document.getElementById("F6");
-                  element.classList.remove("hidden");
-                  button.addEventListener('click', function () {
+                button.addEventListener('click', function () {
+                  if (authValue == 1) {
                     const artworkId = button.getAttribute('id');
                     const savedArtworks = JSON.parse(localStorage.getItem('savedArtworks')) || [];
-
                     if (!savedArtworks.includes(artworkId)) {
                       savedArtworks.push(artworkId);
                       localStorage.setItem('savedArtworks', JSON.stringify(savedArtworks));
                       alert('Artwork saved!');
+                      var element = document.getElementById("F6");
+                      element.classList.add("hidden");
                     } else {
                       alert('Artwork is already saved.');
                     }
-                  });
-                }
-              });
+                  } else {
+                    const loginModal = document.getElementById("login-modal");
+                    const modalEl = new bootstrap.Modal(loginModal);
+                    modalEl.show();
+                  }
+                });
+              }
+              );
             </script>
           </div>
         </div>
