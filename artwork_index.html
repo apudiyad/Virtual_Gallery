@@ -32,7 +32,7 @@
   height:60px;
   bottom:40px;
   right:40px;
-  background-color:#00ffb3;
+  background-color:#4b887c;
   color:#FFF;
   border-radius:50px;
   text-align:center;
@@ -73,7 +73,7 @@
         <nav id="navbar" class="navbar">
           <ul>
             <li>
-              <a class="nav-link scrollto" href="index.html">Home</a>
+              <a class="nav-link scrollto active" href="index.html" data-toggle="tooltip" title="Home"><i class="bi bi-house-door"></i></a>
             </li>
             <li>
               <a class="nav-link scrollto" href="artist_index.html">Artist</a>
@@ -93,6 +93,16 @@
     <main>
       <div class="grid-portfolio" id="portfolio">
         <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="title-box text-center">
+                <h4 class="title-a">
+                  Artworks
+                </h4>
+                <div class="line-mf"></div>
+              </div>
+            </div>
+          </div>
           <div class="row">
             <div class="col-md-4 col-sm-6">
               <div class="portfolio-item">
@@ -388,7 +398,7 @@
       </div>
       </div>
       <!-- Contact Icon at bottom right corner -->
-<a href="#contactModal" class="float" data-toggle="modal">
+<a href="#contactModal" class="float" data-toggle="tooltip" title="Contact Us" data-placement="left">
   <i class="bi bi-envelope my-float"></i>
 </a>
 
@@ -623,6 +633,11 @@
     <!-- Add these script tags before the closing </body> tag -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
   </body>
 
 </html>
