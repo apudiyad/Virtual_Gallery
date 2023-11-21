@@ -198,7 +198,7 @@
         </div>
       </div>
        <!-- Contact Icon at bottom right corner -->
-<a href="#contactModal" class="float" data-toggle="tooltip" title="Contact Us" data-placement="left">
+<a href="#contactModal" class="float contact-icon" data-toggle="modal" title="Contact Us">
   <i class="bi bi-envelope my-float"></i>
 </a>
 
@@ -439,6 +439,14 @@
       $(function () {
         $('[data-toggle="tooltip"]').tooltip()
       })
+    </script>
+    <script>
+      $(document).ready(function(){
+    // Tooltip only Tooltip
+    $('.contact-icon').tooltip({
+      placement: 'left'
+    });
+  });
     </script>
   </body>
 
